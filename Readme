@@ -1,0 +1,15 @@
+# Day 1 – Project Setup (14th Apr / 25th Apr)
+
+## 🎯 Goals:
+- Created Django project: `training_portal`
+- Created app: `core`
+- Created models:
+  - `Employee`: Name, Email, Department
+  - `TrainingProgram`: Title, Description, Start Date, End Date
+  - `Enrollment`: Links Employee ↔ Program
+- Registered models in admin panel
+- Initialized GitHub repo and pushed code as PR #1
+- Deployed basic setup on Render (optional)
+
+## 📌 Repo:
+[GitHub Repo](https://github.com/Silambazhagii/Python_Bootcamp/tree/main/Day6)
