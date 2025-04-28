@@ -1,0 +1,9 @@
+<h1>Training Programs</h1>
+<a href="{% url 'training_add' %}">Add New Training</a>
+<ul>
+    {% for training in trainings %}
+        <li>{{ training.title }} | {{ training.start_date }} to {{ training.end_date }}</li>
+    {% empty %}
+        <li>No training programs yet.</li>
+    {% endfor %}
+</ul>
