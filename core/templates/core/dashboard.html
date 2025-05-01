@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4">Training Enrollments Dashboard</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {% for item in stats %}
+        <div class="bg-white p-4 rounded shadow">
+            <h3 class="text-lg font-semibold">{{ item.training_program__title }}</h3>
+            <p class="text-3xl">{{ item.total }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
