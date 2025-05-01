@@ -1,9 +1,16 @@
-<h1>Employees</h1>
-<a href="{% url 'employee_add' %}">Add New Employee</a>
-<ul>
-    {% for emp in employees %}
-        <li>{{ emp.name }} - {{ emp.email }} - {{ emp.department }}</li>
-    {% empty %}
-        <li>No employees yet.</li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List</title>
+</head>
+<body>
+    <h1>Employee List</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.name }} - {{ employee.position }}</li>
+        {% empty %}
+            <li>No employees found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
