@@ -32,3 +32,47 @@
 
 ## 🔗 PR #3:
 - Title: CRUD and Templates Setup for Employees and Trainings
+
+# Training Portal 🧑‍🏫
+
+A full-featured training management web app for employee scheduling, attendance tracking, and performance reports.
+
+## 🚀 Features
+- User Authentication (Admin + Employees)
+- Add/View/Edit/Delete Employees
+- Assign Training Programs
+- Mark Attendance
+- View Reports
+- Responsive UI with modern design
+
+## 🛠️ Tech Stack
+- **Frontend**: HTML, CSS, JavaScript (or React if applicable)
+- **Backend**: Django (Python)
+- **Database**: SQLite / PostgreSQL
+
+## 📸 Screenshots
+(Add images or GIFs showing the main pages: login, dashboard, employee list, reports)
+
+## 🧪 How to Run Locally
+```bash
+git clone https://github.com/your-username/training-portal.git
+cd training-portal
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+
+
+FOLDER STRUCTURE
+
+training_portal/
+├── core/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── templates/
+├── training_portal/
+│   └── settings.py
+├── static/
+├── manage.py
+└── README.md
